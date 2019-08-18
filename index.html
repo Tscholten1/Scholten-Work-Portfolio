@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Scholten Work Portfolio</title>
+
+    <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+
+    <!-- Add normalize.css to normalize default styles across browsers -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+
+    <!-- Load Font Awesome icons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Add Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300italic,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <style>
+        /* CSS style rules go here! */
+
+        body {
+            background: #FFC930;
+        }
+
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #36A2FF;
+            padding: 15px 0 20px;
+        }
+
+        h1 {
+            font-family: "Overlock SC", sans-serif;
+            color: #375671;
+            font-size: 2.7em;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke;
+            text-shadow: 4px 4px 6px #0e3e3e;
+        }
+
+        h2 {
+            font-family: "Alegreya Sans", sans-serif;
+            font-size: 2.2em;
+            font-style: italic;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: whitesmoke
+        }
+
+        h3 {
+            font-family: sans-serif;
+            font-size: 1.5em;
+            margin: 20px 2px 4px;
+            color: #000000;
+            line-height: 26px;
+        }
+
+        p {
+            font-size: 1.0em;
+            color: #000000;
+            width: 90%;
+            margin: 5px 20px 10px;
+        }
+
+        ul {
+            list-style-position: outside;
+            text-align: outside;
+            font-size: .9em;
+            color: #000000;
+            line-height: 1.0em;
+            margin-left: 1em;
+        }
+
+        ul li {
+            text-align: inside;
+            list-style-position: outside;
+        }
+
+        a,
+        a:visited {
+            color: #003d71;
+        }
+
+        .project {
+            width: 80%;
+            min-width: 700px;
+            height: 100%;
+            margin: 32px auto;
+        }
+
+        .project:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: #F2EDDE;
+            float: left;
+            margin-right: 20px;
+            border: 3px solid #221f14;
+        }
+
+        .info {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tom Scholten</h1>
+        <h2>Web-Mapping Portfolio</h2>
+    </header>
+
+    <section class='info'>
+        <h2></h2>
+        <p>The materials that are featured here illustrate my cartographic and geo-spatial work both as they currently exist and as I continue the learning process and transition into the field of web-based geospatial analysis and web-mapping.</p>
+
+        <p>These projects illustrate examples of common web-mapping and geo-visualization work as part of my lab work for the graduate certificate in the New Maps Plus program at the University of Kentucky.</p>
+
+        <p>Content on this page will change as I develop and create more maps showing a variety of geo-spatial topics. Stay tuned and visit this page often!!</p>
+    </section>
+    <!--        ***********************************************************************************-->
+
+    <section class="project">
+
+        <a href="https://tscholten1.github.io/MAP671-Lab-07/" target="_blank"><img src="Full-size-Images_Maps/Walkability%20and%20Recreation%20in%20Dupage%20County.png" alt="Walkability and Recreation in Dupage County, IL" class="project-image" /></a>
+        <h3>Walkability and Recreation in Dupage County, IL</h3>
+
+        <p>The focus of this project is to show Dupage County with some select recreational points such as parks and bike trails in relation to other key geographic locations important to outdoor activity such as public bathrooms and cafes.</p>
+
+        <h3>Key lesson learned from this lesson:</h3>
+        <Li>Work with Open Street Map to acquire local/regional micro data</Li>
+        <Li>Perform geoprocessing (e.g. spatial analysis) using the buffer tool</Li>
+        <Li>Use QuickOSM to acquire OSM tags to expedite the data acquisition procress by querying key values of map data</Li>
+        <Li>Use QuickOSM Processing Toolbox to remove unnecessary data fields</Li>
+        <Li>Refine the symbology process of point, line, and polygon features by exploring the tools and methods in Qgis</Li>
+        <Li>Add multiple ground control points using Add Point feature (found in the Georefencer tool)</Li>
+        <Li>Create vector data layers such as points, lines, and polygons using Qgis tools (Layer>Create Layer)</Li>
+        <Li>Use the Select by Location tool to cafes that intersect one mile buffers around each park. Using this tool for this process preserved key attribute information which would have been lost if the clip or intersection tool were used.</Li>
+        <Li>Effort was also spent creating the proper visual hierarchy for the maps and ensuring an attractive map product. Coordinate Reference System: NAD83(HARN)/Illinois East (ftUS) EPSG:3443. Basemap: Open Street Map. Other data provided by The Appalachian Trail Conservancy (trail shapefile), Natural Earth (10m graticule).</Li>
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/MAP671-Lab-07/">Map of Dupage County</a></li>
+        </ul>
+    </section>
+
+    <!--        ***********************************************************************************-->
+    <section class="project">
+        <a href="https://tscholten1.github.io/map673-Final-Project/" target="_blank"><img src="Full-size-Images_Maps/Getting%20to_from%20Chicago.JPG" alt="Getting to and from in Chicago" class="project-image" /></a>
+        <h3>Getting to and From in Chicago</h3>
+        <Li><a href="https://data.cityofchicago.org/">Data source:</a>Chicago Data Portal</Li>
+
+        <p>This project is the culmination of lessons and techniques learned in MAP673, Design For Interactive Web Mapping. The map includes a wide variety of user interaction elements that include check boxes to turn on/off specific point location layers, maker clustering which aggregates large numbers of locations into one marker, ability to drop a marker to designate a starting point, and ability to click on a second point location to determine the distance (in miles) and time (by walking, biking, driving).</p>
+
+        <h3>Map features include:</h3>
+        <p>
+            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information. It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
+            <Li>Clicking on point locations of pharmacies, hospitals, and grocery stores calls up a pop-up box that provides the name and address.</Li>
+            <Li>Because of the large number of point locations that cluster in the City of Chicago, a Leaflet plugin</Li>
+            <Li>Used <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>. This plugin clusters the markers and shows the number of items in each cluster, and as we zoom it adjusts the clusters based on the current view. This not only makes the map easier for the user to understand, it’s also a lot more efficient.</Li>
+            <Li>An information panel, available when interacting with county features, which will display more information than space allows within the popups or tooltips.</Li>
+
+        </p>
+        <h3>Software used:</h3>
+        <Li>GitHub</Li>
+        <Li>Used <a href="https://mapshaper.org/">Mapshaper</a>.This site enables editing map data in shapefile, GeoJSON, TopoJSON, DBF, and CSV formats.</Li>
+        <Li>Used <a href="https://www.convertcsv.com/csv-to-geojson.htm">Convert CSV files to Geojson</a>.This site to converts Comma Separated Values (CSV) and Excel files into Geojson (and other formats) to load a local file, paste your CSV data, or load from an external web page. This tool runs completely on the client-side using Javascript, so your data never leaves your computer. Save the output by copying or use the "Download Result" feature.</Li>
+        <Li>Used <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>.This not only makes the map easier for the user to understand, it’s also a lot more efficient.</Li>
+        <Li>Brackets</Li>
+        <Li>GeoJSON</Li>
+        <Li>Leaflet</Li>
+        <h3>Key concepts:</h3>
+        <Li>Used the drawMap() function which uses GeoJSON data to create a L.GeoJson object with basic styles, adds it to the map, and then fits the map view to the extent of the layer.</Li>
+        <Li>Used an advanced technique known as <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> to load an external file containing GeoJSON data. These data contained both the geometry information for drawing our SVG elements on the map and the data attribute data.</Li>
+        <Li>Loading GeoJSON data using the JQuery method .getJSON(). The callback function then executes, and accessing GeoJSON data, which has been parsed by JQuery and preserved in the same JSON structure.</Li>
+        <Li>Created and using the Leaflet L.GeoJson object</Li>
+        <Li>Invoked Leaflet methods on layer groups and individual layers after creation</Li>
+        <Li>Used a Leaflet layer control to manage multiple data layers</Li>
+        <Li>Loaded GeoJSON data – stored as a JavaScript object and saved within an external file into the script</Li>
+        <Li>Used the Leaflet L.geoJson() method to draw point-level data to a Leaflet GeoJson layer</Li>
+
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/map673-Final-Project/">Getting to and from in Chicago</a></li>
+
+        </ul>
+    </section>
+
+    
+    <!--        ***********************************************************************************-->
+    
+    
+    
+    <!--        ***********************************************************************************-->
+    <section class="project">
+
+        <a href="https://tscholten1.github.io/Oregon-Unemployment/" target="_blank"><img src="Full-size-Images_Maps/Oregon%20Unemployment%20Rates%20by%20County%20w_slider.jpg" alt="Oregon Unemployment" class="project-image" /></a>
+        <h3>Map of Oregon Unemployment by County</h3>
+
+        <p>The focus of this project is to provide multiple user interaction elements to explore the data within the spatial and temporal context of unemployment rates in Oregon counties and more broadly, the entire state.</p>
+
+        <h3>Map features include:</h3>
+        <p>
+            <Li>Choropleth map displays state and county-level unemployment rates by year.</Li>
+            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information. It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
+            <Li>Provide the user with a slider bar for the user to change the year of data that updates both the choropleth map and the information panel.</Li>
+            <Li>The popup/tooltip allows the user an interactive experience to retrieve specific values (e.g. unemployment rate and county name) from individual counties</Li>
+            <Li>Provide the user the ability to switch between data sets using a slider bar to change years and have the map dynamically update to reflect these changes instantly.</Li>
+            <Li>An information panel, available when interacting with county features, which will display more information than space allows within the popups or tooltips.</Li>
+
+        </p>
+        <h3>Software used:</h3>
+        <Li>GitHub</Li>
+        <Li>Papa Parse</Li>
+        <Li>Brackets</Li>
+        <Li>GeoJSON</Li>
+        <Li>Leaflet</Li>
+        <h3>Key concepts:</h3>
+        <Li>Used a JQuery .getJSON() method to make an AJAX request and load the or-counties.json file.</Li>
+        <Li>Used the drawMap() function which uses GeoJSON data to create a L.GeoJson object with basic styles, adds it to the map, and then fits the map view to the extent of the layer.</Li>
+        <Li>Used <a href="https://http://papaparse.com//">Papa Parse</a>, an in-browser CSV data parser, to load CSV data and convert it to JSON format.</Li>
+        <Li>Used an advanced technique known as <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> to load an external file containing GeoJSON data. These data contained both the geometry information for drawing our SVG elements on the map (e.g., Oregon counties) and the data attribute data (e.g., unemployment rates for each county).</Li>
+        <Li>This module introduces the idea of keeping our geometry data and data attribute information in separate files and then using multiple AJAX requests to load these files independently. One reason for doing this is that storing information within a comma separated values (CSV) file format is notably concise.</Li>
+        <Li>Loading GeoJSON data using the JQuery method .getJSON(). The callback function then executes, and accessing GeoJSON data, which has been parsed by JQuery and preserved in the same JSON structure.</Li>
+        <Li>Created and using the Leaflet L.GeoJson object</Li>
+        <Li>Created the classification breaks one time within he script using the entire range of data values.</Li>
+        <Li>Invoked Leaflet methods on layer groups and individual layers after creation</Li>
+        <Li>Used a Leaflet layer control to manage multiple data layers</Li>
+        <Li>Loaded GeoJSON data – stored as a JavaScript object and saved within an external file into the script</Li>
+        <Li>Used the Leaflet L.geoJson() method to draw point-level data to a Leaflet GeoJson layer</Li>
+
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/Oregon-Unemployment/">Map of Oregon Unemployment by Counties</a></li>
+
+        </ul>
+    </section>
+
+    <!--        *********************************************************************************-->
+    <section class="project">
+
+        <a href="https://tscholten1.github.io/Kentucky_Housing_by_County/" target="_blank"><img src="Full-size-Images_Maps/Kentucky%20Interactive%20Choropleth2.jpg" alt="Housing in Kentucky" class="project-image" /></a>
+        <h3>Map of Kentucky Homeownership by County</h3>
+        <!--    <h3></h3>-->
+        <p>The focus of this project is to provide user intaction elements to explore the data within the spatial context of Kentucky counties.This map was built using custom Javascript code drawing upon the Leaflet Javascript Library as well as CSS and HTML styling rules.</p>
+
+        <h3>Map features include:</h3>
+        <p>
+            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information. It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
+            <Li>Display housing characteristics (e.g. owned, owned with mortgage, rented) by county.</Li>
+            <Li>Build a user interface element allowing the user to choose a new data attribute to dynamically update the map and legend.</Li>
+            <Li>Build an information panel, available when interacting with county features, which will display more information than space allows within the popups or tooltips.</Li>
+            <Li>The popup/tooltip allows the user an interactive experience to retrieve specific values from individual counties</Li>
+            <Li>Provide the user the ability to switch between data sets and have the map dynamically update to reflect these changes</Li>
+
+        </p>
+        <h3>Software used:</h3>
+        <Li>GitHub</Li>
+        <Li>Brackets</Li>
+        <Li>GeoJSON</Li>
+        <Li>JQuery</Li>
+        <Li>Leaflet</Li>
+        <h3>Key concepts:</h3>
+        <Li>Introducing map elements of user interaction such as drop down layers, tool tip display on map of counties that is also linked to and updates an information panel.</Li>
+        <Li>Declaring functions (drawMap, getClassBreaks, getColor, drawLegend)</Li>
+        <Li>Refactoring a function for dynamic updating which involves executing blocks of code once and blocks of code that are executed repreatedly.</Li>
+        <Li>Creating and using the Leaflet L.GeoJson object</Li>
+        <Li>Invoking Leaflet methods on layer groups and individual layers after creation</Li>
+        <Li>Using a Leaflet layer control to manage multiple data layers</Li>
+        <Li>Setting universal styles and layer-specific styles using the L.GeoJson style option</Li>
+        <Li>Loading GeoJSON data – stored as a JavaScript object and saved within an external file into our script</Li>
+        <Li>Using the Leaflet L.geoJson() method to draw point-level data to a Leaflet GeoJson layer</Li>
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/map672_Lab09/">Map of Homeownership Characteristics by County</a></li>
+
+        </ul>
+    </section>
+    <!--    ***********************************************************************************-->
+
+    <!--    ***********************************************************************************-->
+
+    <section class="project">
+
+        <a href="https://tscholten1.github.io/map672_Lab09/" target="_blank"><img src="Full-size-Images_Maps/Lab%209%20Map.jpg" alt="Map of Crime" class="project-image" /></a>
+        <h3>Map of power plants displayed using propotional symbol sizes to visualize the amount of power produced from a particular fuel source (i.e. coal, solar, nuclear)</h3>
+        <p>This map was built using custom Javascript code drawing upon the Leaflet Javascript Library as well as CSS and HTML styling rules.</p>
+
+        <h3>Map features include:</h3>
+        <p>
+            <Li>Display power plant power generation using proportional symbol size to encode visually the amount of power produced from a particular fuel source.</Li>
+            <Li>Allow the user to compare three distinct fuel sources (of any amount of generating capacity) by visually encoding the proportional symbols with distinct colors (i.e., make the symbol for each fuel source a different color).</Li>
+            <Li>Provide the user with a layer control to toggle on and off the visibility of various power plant data layers.</Li>
+            <Li>style the label text within the layer control to correspond with the color used to encode a specific power fuel source when the user clicks on the map once, the map display will change to only show plants within 500 km of the click event after the user clicks on the map to filter by distance and then clicks on any power plant currently visible, a popup will show specific information about the plant. this information should include the plant's name, its fuel source, and the distance from the plant to the the click point.</Li>
+        </p>
+        <h3>Software used:</h3>
+        <Li>GitHub</Li>
+        <Li>Brackets</Li>
+        <Li>GeoJSON</Li>
+        <Li>Leaflet</Li>
+        <h3>Key concepts:</h3>
+        <Li>Creating and using the Leaflet L.GeoJson object</Li>
+        <Li>Invoking Leaflet methods on layer groups and individual layers after creation</Li>
+        <Li>Using a Leaflet layer control to manage multiple data layers</Li>
+        <Li>Building a nested looping structure to loop through one of the JSON objects properties, and for each time that is performed looping through all the properties of the second object. A nested looping structure is a fairly common technique in programming</Li>
+        <Li>Setting universal styles and layer-specific styles using the L.GeoJson style option</Li>
+        <Li>Loading GeoJSON data – stored as a JavaScript object and saved within an external file into our script</Li>
+        <Li>Using the Leaflet L.geoJson() method to draw point-level data to a Leaflet GeoJson layer</Li>
+        <Li>Using L.geoJson() 's options: pointToLayer to convert default Leaflet markers to circleMarkers, filter to show only features meeting specific criteria, and onEachFeature to bind Leaflet Tooltip objects to the features and attach additional event listeners such as mouseover and mouseout and using techniques for code refactoring.</Li>
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/map672_Lab09/">Map of power plants using coal, solar, and nuclear power as power sources</a></li>
+        </ul>
+    </section>
+
+    <!--    ***********************************************************************************-->
+    <section class="project">
+        <a href="https://tscholten1.github.io/Module-04/" target="_blank"><img src="Full-size-Images_Maps/Electric%20Vehicle%20Recharging%20Stations.jpg" alt="" class="project-image"></a>
+        <div>
+            <!--<a target = '_blank' href="Full-size-Images_Maps/Lab%209%20Map.jpg"><img src="Full-size-Images_Maps/Lab%209%20Map.jpg" alt="Map of Crime" class="project-image" /></a>-->
+            <h3>Locations of Electric Vehicle Refueling Stations Throughout the U.S.</h3>
+            <p>This map was created using JavaScript drawing upon the Leaflet Javascript library, Leaflet, CSS, and HTML, Leaflet's marker cluter library, and GeoJSON.</p>
+
+            <h3>Map features include:</h3>
+            <p>
+                <Li>Pan and Zooom</Li>
+                <Li>Tooltip on point location provides station name, city, hours, phone, address</Li>
+                <Li>Point locations expand or consolidate based on zoom in/out</Li>
+            </p>
+
+            <p>Data source(s): <a href="https://www.nrel.gov/docs/fy17osti/69031.pdf">National plugIn electric vehicle infrastructure analysis</a> </p>
+            <h3>Key concepts:</h3>
+            <Li>Outlining a web mapping technology stack</Li>
+            <Li>Working with Leaflet web-mapping library</Li>
+            <Li>Using marker clustering to consolidate large numbers of point locations</Li>
+            <Li>Converting data into GeoJSON format</Li>
+            <Li>Working with plugins (Leaflet Markercluster, Turf.js, Leaflet Omnivore, Chroma.js)</Li>
+            <Li>Incorporating basic user interaction features</Li>
+
+            <ul>
+                <li>See the map: <a href="https://tscholten1.github.io/Module-04/">Map of Locations of Electric Refueling Stations Throughout the U.S. </a></li>
+            </ul>
+
+    </section>
+
+    <!--     ***********************************************************************************-->
+    <section class="project">
+        <a href="https://tscholten1.github.io/Module-02/" target="_blank"><img src="Full-size-Images_Maps/Greenhouse%20gasses%20in%20WI.jpg" alt="" class="project-image"></a>
+        <div>
+            <!--<a target = '_blank' href="Full-size-Images_Maps/Lab%209%20Map.jpg"><img src="Full-size-Images_Maps/Lab%209%20Map.jpg" alt="Map of Crime" class="project-image" /></a>-->
+            <h3>Greenhouse Gas Emissions in Wisconsin (2015)</h3>
+            <p>This proportional symbol map shows the relative magnitude of green house gas emissions (GHG) in 2015 by large facilites in Wisconsin. Data are shown by <span style='color: #bd4932; font-weight: bold;'>fuel combustion</span> and <span style='color: #105b63; font-weight: bold;'> process emissions</span>. The use of proportional symbols was the better choice to illustrate the amount of Co2 since this is based on an exact point location. Proportional maps are also best suited when showing magnitudes, or amounts of some numerical phenomena relative to other locations.
+
+                <p>This map was built using custom Javascript code drawing upon the Leaflet Javascript Library as well as CSS and HTML styling rules.</p>
+
+                <h3>Map features include:</h3>
+                <Li>Pan and Zooom</Li>
+                <Li>Tooltip on point location provides station name, city, hours, phone, address</Li>
+                <Li>Point locations expand or consolidate based on zoom in/out</Li>
+
+                <h3>Key concepts:</h3>
+                <Li>Outlining a web mapping technology stack</Li>
+                <Li>Working with Leaflet web-mapping library</Li>
+                <Li>Data wrangling .cvs data into GeoJSON format, using Leaflets CircleMarker to provide a visual affordance when mousing over a location, and incorporating basic user interaction features.</Li>
+
+                <p>Data source(s): U.S. EPA <a href="https://ghgdata.epa.gov/ghgp/main.do">FLIGHT</a></p>
+                <ul>
+                    <li>See the map: <a href="https://tscholten1.github.io/Module-02/">Map of greenhouse gas emitters in WI</a></li>
+                </ul>
+
+    </section>
+
+    <!--    **************************************************************************************-->
+    <section class="project">
+
+        <a href="https://tscholten1.github.io/Lesson_10//" target="_blank"><img src="Full-size-Images_Maps/Kentucky%20Choropleth.jpg" alt="Map of Crime" class="project-image" /></a>
+        <h3>Map of Home Ownership in Kentucky Counties</h3>
+        <p>This map was shows the geographic distribution of home ownership in Kentucky by county.</p>
+        <p>This map was created using JavaScript, Leaflet, CSS, and HTML.</p>
+
+        <h3>Map features include:</h3>
+        <Li>Pan and Zooom</Li>
+        <Li>Tooltip on point location provides percentage of households that either own their home or have mortgages</Li>
+        <Li>Point locations expand or consolidate based on zoom in/out</Li>
+
+        <p></p>
+        <h3>Key concepts:</h3>
+        <Li>Outlining a web mapping technology stack</Li>
+        <Li>Working with Leaflet web-mapping library</Li>
+        <Li>Converting data into GeoJSON format</Li>
+        <Li>JQuery library to apply style rules to HTML elements and handle user interaction events</Li>
+        <Li>Use JQuery to load data into the map document for use by Leaflet map</Li>
+        <Li>Incorporating basic user interaction features</Li>
+        <Li>Classifying and coloring ranges of data </Li>
+
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/map672_Lab09/">Map of power plants using coal, solar, and nuclear power as power sources</a></li>
+        </ul>
+    </section>
+
+    <!--    ********************************************************************************************-->
+    <section class="project">
+        <a href="Full-size-Images_Maps/Map4.jpg"><img src="Images_Maps/Map4.jpg" alt="Map of Crime" class="project-image" /></a>
+        <h3>Balancing Habitat Preservation with Transportation Needs in Centre County Pennsylvania</h3>
+
+        <p>The goal of this map is to visualize those areas in Centre County, Pennsylvania that meet specified criteria. More specifically, the analysis will be used by the Centre County Planning Office to explore a proposed biological reserve system within Centre County. Areas that meet specific criteria would be protected based on a variety of factors including the number of different plant and mammal species and habitat quality. The map produced from this geospatial analysis will assist the decision making process of government officials in evaluating the proposed biological reserve system. This map illustrates multiple variables related to land use, habitat population, and transportation planning</p>
+
+        <p>One of the challenging, but also practical elements of this lesson was working with both vector and raster data. Vector data include such phenomena as points (specific locations), lines (highways and roads), and polygons (park boundaries, habitat areas, zoning districts). Raster data represent a continuum of some phenomena such as temperature, climate, or elevation and are represented by cells that have some value and comprise a grid or matrix-like layer. Working with raster data requires an understanding that the cell size of a raster layer can affect the analysis process and can affect the granularity of the level of detail of layers.</p>
+
+        <h3>Numerous GIS methods were used in compiling the results of this map. Among them were:</h3>
+
+        <li>Joining a table (specie rich) with no geographic attribute to a shapefile (Study Areas) based on a unique field (BLOCK_ID).</li>
+        <li>Using the Select by Attribute and Select by Location operation in the attribute tables of several layers</li>
+        <li>Adding new fields to several attribute tables (e.g. areas with 70 or more species)</li>
+        <li>Using the Field Calculator to compute new data based on existing fields in several attribute tables</li>
+        <li>Observing commonly accepted cartographic principles such as visual hierarchy, inclusion of north arrow and scale bar, and proper use of space around elements
+        </li>
+        <li>Creating buffers around transportation centerlines (e.g. roads, highways, interstates) using the buffer tool in the Analysis/Proximity toolbox</li>
+        <li>Using the Union tool to combine multiple buffer layers for each of the three road types into one layer (Unioned_Buffer_Within_SpeAre1)</li>
+        <li>Using the reclassify operation to create categories of different data types (Reclass_10 percent slope)</li>
+
+        <p>Project criteria were defined as:</p>
+        <li>Greater than 70 bird and mammalian species combined
+            <a</li>
+                <li>Less than 10% of each study area occupied by buffered roads, highways, and interstates
+                    <a</li>
+                        <li>High habitat potential</li>
+                        <li>Publicly-owned land</li>
+                        <li>Forested areas</li>
+                        <li>Slope less than 10%</li>
+                        <h3></h3>
+                        <p>The map was created using ArcGIS as well as U.S. Census and Pennsylvania state and county level data.</p>
+                        <ul>
+                            <li>See the map: <a href="Full-size-Images_Maps/Map4.jpg">Map of Centre County Pennsylvania</a></li>
+
+                        </ul>
+    </section>
+
+    <!--    **************************************************************************-->
+
+    <section class="project">
+        <a href="https://tscholten1.github.io/Module-01/" target="_blank"><img src="Full-size-Images_Maps/BikeRide.jpg" alt="" class="project-image"></a>
+        <div>
+            <!--<a target = '_blank' href="Full-size-Images_Maps/Lab%209%20Map.jpg"><img src="Full-size-Images_Maps/Lab%209%20Map.jpg" alt="Map of Crime" class="project-image" /></a>-->
+            <h3>The Best Two Hour Bike Ride in Dane County, WI</h3>
+            <p>This map was built using custom Javascript code drawing upon the Leaflet Javascript Library as well as CSS and HTML styling rules, and converting a Google travel route to GeoJSON format.</p>
+            <h3>Map features include:</h3>
+            <Li>Pan and zoom</Li>
+            <Li>Mouse-in and out of point locations</Li>
+            <Li>Tool-tip information upon hovering over point locations</Li>
+
+            <h3>Key concepts:</h3>
+            <Li>Outlining a web mapping technology stack</Li>
+            <Li>Working with Leaflet web-mapping library</Li>
+            <Li>Incorporating Leaflet tooltip markers</Li>
+            <Li>Converting a Google travel route by copying and pasting the map URL into the web tool <a href="https://mapstogpx.com/">Maps to GPX</a> and Converting it into a <a href="http://geojson.io/#map=2/20.0/0.0">GeoJSON</a> format</Li>
+            <Li>Incorporating basic user interaction features.</Li>
+            <ul>
+                <li>See the map: <a href="https://tscholten1.github.io/Module-01/">Project 5 Map of the best two hour bike ride in Dane County, WI</a></li>
+            </ul>
+    </section>
+
+    <!--    ****************************************************************************  -->
+
+
+    <!--    ********************************************************************************-->
+
+
+    <!--    ************************************************************************-->
+    <section class="project">
+        <a href="Full-size-Images_Maps/Map1.jpg"><img src="Images_Maps/Map1.jpg" alt="Map of Crime" class="project-image"/></a>
+        <h3>Map of Crime and Quality of Life in the 2800 block of East Washington Avenue Incidents in Madison, WI</h3>
+
+        <p>This map illustrates a common map and spatial analysis product that I produced as a crime analyst with the City of Madison Police Department. It uses quality of life and some categories of crime data generated by the police CAD system so that it captures all calls that were generated by citizens who call 911. This map helps decision-makers in the police department assess call volume and the crime dynamics occuring at this location. Creating maps such as this involve a balance of visual appeal while also providing as much relevant information as possible.</p>
+        <p>This map was created using ArcGIS and LERMS/police data</p>
+        <ul>
+            <li>See the map: <a href="Full-size-Images_Maps/Map1.jpg">Map of Crime</a></li>
+        </ul>
+    </section>
+
+    <!--        ***********************************************************************-->
+    <section class="project">
+        <a href="Full-size-Images_Maps/Map2.jpg"><img src="Images_Maps/Map2.jpg" alt="Map of Crime" class="project-image" /></a>
+        <h3>Map of Crime and Quality of Life Incidents in the Darbo Neighborhood of Madison, WI</h3>
+
+        <p>Similar to the previous map above, this map displays data from different periods of time (i.e. months) in a micro-place that has experienced elevated call volume and serious crime and quality of life incidents in a relatively small area known as a micro-place. </p>
+        <p>This map was created using ArcGIS and LERMS/police data</p>
+        <ul>
+            <li>See the map: <a href="Full-size-Images_Maps/Map2.jpg">Map of Crime</a></li>
+        </ul>
+    </section>
+
+    <!--        ***************************************************************************-->
+
+
+
+    <!--    ****************************************************************************************-->
+
+</body>
+
+</html>
