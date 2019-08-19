@@ -116,7 +116,6 @@
             width: 80%;
             margin: 10px auto;
         }
-
     </style>
 </head>
 
@@ -144,13 +143,13 @@
         <p>The focus of this project is to show some select recreational points of interest such as parks and bike trails in relation to other key geographic locations important to outdoor activity such as public bathrooms and cafes in Dupage County, a western suburb of Chicago.</p>
 
         <h3>Key lesson learned from this lesson:</h3>
-        <Li>Work with Open Street Map to acquire local/regional micro data</Li>
-        <Li>Perform geoprocessing (e.g. spatial analysis) using the buffer tool</Li>
-        <Li>Use QuickOSM to acquire OSM tags to expedite the data acquisition procress by querying key values of map data</Li>
-        <Li>Use QuickOSM Processing Toolbox to remove unnecessary data fields</Li>
-        <Li>Refine the symbology process of point, line, and polygon features by exploring the tools and methods in Qgis</Li>
-        <Li>Create vector data layers such as points, lines, and polygons using Qgis tools (Layer>Create Layer)</Li>
-        <Li>Use the 'Select by Location' tool to cafes, bathrooms and other points of interest that intersect one mile buffers around each park. Using this tool for this process preserved key attribute information which would have been lost if the clip or intersection tool were used.</Li>
+        <Li>Worked with Open Street Map to acquire local/regional micro data</Li>
+        <Li>Performed geoprocessing (e.g. spatial analysis) using the buffer tool</Li>
+        <Li>Used QuickOSM to acquire OSM tags to expedite the data acquisition procress by querying key values of map data</Li>
+        <Li>Used QuickOSM Processing Toolbox to remove unnecessary data fields</Li>
+        <Li>Refined the symbology process of point, line, and polygon features by exploring the tools and methods in Qgis</Li>
+        <Li>Created vector data layers such as points, lines, and polygons using Qgis tools (Layer>Create Layer)</Li>
+        <Li>Used the 'Select by Location' tool to cafes, bathrooms and other points of interest that intersect one mile buffers around each park. Using this tool for this process preserved key attribute information which would have been lost if the clip or intersection tool were used.</Li>
         <Li>Effort was also spent creating the proper visual hierarchy for the maps and ensuring an attractive map product. Coordinate Reference System: NAD83(HARN)/Illinois East (ftUS) EPSG:3443. Basemap: Open Street Map.</Li>
         <ul>
             <li>See the map: <a href="https://tscholten1.github.io/MAP671-Lab-07/">Map of Dupage County</a></li>
@@ -160,34 +159,34 @@
     <!--        ***********************************************************************************-->
     <section class="project">
         <a href="https://tscholten1.github.io/map673-Final-Project/" target="_blank"><img src="Full-size-Images_Maps/Getting%20to_from%20Chicago.JPG" alt="Getting to and from in Chicago" class="project-image" /></a>
-        <h3>Getting to and From in Chicago</h3>
+        <h3>Getting to and from in Chicago</h3>
         <Li><a href="https://data.cityofchicago.org/">Data source:</a>Chicago Data Portal</Li>
 
-        <p>This project is the culmination of lessons and techniques learned in MAP673, Design For Interactive Web Mapping. The map includes a wide variety of user interaction elements that include check boxes to turn on/off specific point location layers, maker clustering which aggregates large numbers of locations into one marker, ability to drop a marker to designate a starting point, and ability to click on a second point location to determine the distance (in miles) and time (by walking, biking, driving).</p>
+        <p>This project is the culmination of lessons and techniques learned in MAP 673, Design For Interactive Web Mapping. The map includes a wide variety of user interaction elements that include check boxes to turn on/off specific point location layers, marker clustering which aggregates large numbers of locations into one marker at a given scale, ability to drop a marker to designate a starting point, and the ability to click on a second point location to determine the distance (in miles) and time (by walking, biking, driving) to travel to the destination point.</p>
 
         <h3>Map features include:</h3>
         <p>
-            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information. It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
+            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information, but It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
             <Li>Clicking on point locations of pharmacies, hospitals, and grocery stores calls up a pop-up box that provides the name and address.</Li>
-            <Li>Because of the large number of point locations that cluster in the City of Chicago, a Leaflet plugin</Li>
-            <Li>Used <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>. This plugin clusters the markers and shows the number of items in each cluster, and as we zoom it adjusts the clusters based on the current view. This not only makes the map easier for the user to understand, it’s also a lot more efficient.</Li>
-            <Li>An information panel, available when interacting with county features, which will display more information than space allows within the popups or tooltips.</Li>
+            <Li>Because of the large number of point locations that cluster in the City of Chicago, a Leaflet plugin was used
+                <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>. This plugin clusters the markers and shows the number of items in each cluster, and as we zoom in it adjusts the clusters based on the current view. This not only makes the map easier for the user to understand, it’s also more efficient.</Li>
+            <Li>An information panel, available when interacting with features, which will display more information than space allows within the popups or tooltips.</Li>
 
         </p>
         <h3>Software used:</h3>
         <Li>GitHub</Li>
         <Li>Used <a href="https://mapshaper.org/">Mapshaper</a>.This site enables editing map data in shapefile, GeoJSON, TopoJSON, DBF, and CSV formats.</Li>
-        <Li>Used <a href="https://www.convertcsv.com/csv-to-geojson.htm">Convert CSV files to Geojson</a>.This site to converts Comma Separated Values (CSV) and Excel files into Geojson (and other formats) to load a local file, paste your CSV data, or load from an external web page. This tool runs completely on the client-side using Javascript, so your data never leaves your computer. Save the output by copying or use the "Download Result" feature.</Li>
-        <Li>Used <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>.This not only makes the map easier for the user to understand, it’s also a lot more efficient.</Li>
+        <Li>Used <a href="https://www.convertcsv.com/csv-to-geojson.htm">Convert CSV files to Geojson</a>.This site converts Comma Separated Values (CSV) and Excel files into Geojson (and other formats) by loading or a CSV or Excel file, or loading from an external web page. This tool runs on the client-side using Javascript, so data never leaves a local computer. Save the output by copying or use the "Download Result" feature.</Li>
+        <Li>Used <a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet marker cluster</a>.This not only makes the map easier for the user to understand, it’s also more efficient.</Li>
         <Li>Brackets</Li>
         <Li>GeoJSON</Li>
         <Li>Leaflet</Li>
         <h3>Key concepts:</h3>
         <Li>Used the drawMap() function which uses GeoJSON data to create a L.GeoJson object with basic styles, adds it to the map, and then fits the map view to the extent of the layer.</Li>
-        <Li>Used an advanced technique known as <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> to load an external file containing GeoJSON data. These data contained both the geometry information for drawing our SVG elements on the map and the data attribute data.</Li>
-        <Li>Loading GeoJSON data using the JQuery method .getJSON(). The callback function then executes, and accessing GeoJSON data, which has been parsed by JQuery and preserved in the same JSON structure.</Li>
-        <Li>Created and using the Leaflet L.GeoJson object</Li>
-        <Li>Invoked Leaflet methods on layer groups and individual layers after creation</Li>
+        <Li>Used an advanced technique known as <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> to load an external file containing GeoJSON data. These data contained both the geometry information for drawing SVG elements on the map and the attribute data.</Li>
+        <Li>Loading GeoJSON data using the JQuery method .getJSON(). The callback function executes, and accesses the GeoJSON data, which has been parsed by JQuery and preserved in the same JSON structure.</Li>
+        <Li>Created and used the Leaflet L.GeoJson object</Li>
+        <Li>Invoked Leaflet methods on layer groups and individual layers</Li>
         <Li>Used a Leaflet layer control to manage multiple data layers</Li>
         <Li>Loaded GeoJSON data – stored as a JavaScript object and saved within an external file into the script</Li>
         <Li>Used the Leaflet L.geoJson() method to draw point-level data to a Leaflet GeoJson layer</Li>
@@ -198,6 +197,32 @@
         </ul>
     </section>
     <!--        ***********************************************************************************-->
+
+    <section class="project">
+        <a href="https://tscholten1.github.io/MAP671-Final-Project/" target="_blank"><img src="Full-size-Images_Maps/2019%20Road%20Trip.png" alt="2019 Road Trip" class="project-image" /></a>
+        <h3>2019 Road Trip</h3>
+        <p>This project synthesized a variety of tools, techniques, and methods throughout MAP 671, Introduction to New Mapping. Key lessons learned include: creating a process to export Google location data from my Google account into a usable format for mapping. This involved:</p>
+
+        <li>Exporting data from the Google location history. Because Google allows only exporting in monthly time frames, I had to export each day for the time frame that I wanted as a .KML file.</li>
+        <li>Upon exporting each day's data, I then uploaded that data to Geojson.io where I was able to see and verify all point locations.</li>
+        <li>Next, I was able to export all 15 days of individual .KML files as one geojson file which was then uploaded to Mapbox.</li>
+        <li>Two duplicate files were made of this dataset to show a line segment of my travel route and a second to show point locations</li>
+        <li>These two datasets were then styled with color and size to create a visually appealing map feature.</li>
+
+        <li>Working with numberous CSS and HTML refinements to create a visually and interactively pleasing map. Specific elements that I explored and used include:</li>
+
+        <li>Resizing large (both in pixels and megabytes) photos</li>
+        <li>Placment of photos within a two column web page</li>
+        <li>Including a Mapbox map within my web page</li>
+        <li>Creating hyperlinks for provide readers a convenient way to gain additional information on the location or site that was visited.</li>
+
+        <li>Style datasets in Mapbox for point locations, line segments, and feature labels.</li>
+        <li>A seperate geojson file needed to be created of a smaller set of locations to visualize to highligh key areas or locations that would also help to provide reference on the map.</li>
+        <li>Utilize a technology and software flow the included Bracets as my text editor, GitHub to store my data in repositories and serve as a version control.</li>
+        <ul>
+            <li>See the map: <a href="https://tscholten1.github.io/MAP671-Final-Project/">2019 Road Trip</a></li>
+        </ul>
+    </section>
 
     <!--        ***********************************************************************************-->
     <section class="project">
