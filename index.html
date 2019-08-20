@@ -116,6 +116,7 @@
             width: 80%;
             margin: 10px auto;
         }
+
     </style>
 </head>
 
@@ -184,43 +185,49 @@
         <h3>2019 Road Trip web page with interactive map</h3>
         <p>This project synthesized a variety of tools, techniques, and methods throughout MAP 671, Introduction to New Mapping. Key lessons learned include: creating a process to export Google location data from my Google account into a usable format for mapping. This involved:</p>
 
-        <li>Exporting data from the Google location history. Because Google allows only exporting in monthly time frames, I had to export each day for the time frame that I wanted as a .KML file.</li>
+        <li>Exporting data from Google location history located on cell phone. Because Google allows only exporting in monthly time frames, I had to export each day for the time frame that I wanted as a .KML file.</li>
         <li>Upon exporting each day's data, I then uploaded that data to Geojson.io where I was able to see and verify all point locations.</li>
         <li>Next, I was able to export all 15 days of individual .KML files as one geojson file which was then uploaded to Mapbox.</li>
         <li>Two duplicate files were made of this dataset to show a line segment of my travel route and a second to show point locations</li>
         <li>These two datasets were then styled with color and size to create a visually appealing map feature.</li>
-
         <li>Working with numberous CSS and HTML refinements to create a visually and interactively pleasing map. Specific elements that I explored and used include:</li>
-
         <li>Resizing large (both in pixels and megabytes) photos</li>
         <li>Placment of photos within a two column web page</li>
         <li>Including a Mapbox map within my web page</li>
         <li>Creating hyperlinks for provide readers a convenient way to gain additional information on the location or site that was visited.</li>
-
         <li>Style datasets in Mapbox for point locations, line segments, and feature labels.</li>
         <li>A seperate geojson file needed to be created of a smaller set of locations to visualize to highligh key areas or locations that would also help to provide reference on the map.</li>
         <li>Utilize a technology and software flow the included Bracets as my text editor, GitHub to store my data in repositories and serve as a version control.</li>
-        <ul>
-            <li>See the map: <a href="https://tscholten1.github.io/MAP671-Final-Project/">2019 Road Trip</a></li>
-        </ul>
+
+        <h3>Web page and map features include:</h3>
+        <p>
+            <Li>Details for selected points of interest that were visted on the trip including an image/photo of the location.</Li>
+            <Li>Paragraph providing a synopsis of the point of interest</Li>
+            <Li>A hyperlink (in blue text) that directs the user to an external web source of additional information on the point of interest.</Li>
+            <Li>Initial web map (created in Mapbox studio) that shows the specific travel route based on location data. Points of interest are labeled that changes based on zoom level.</Li>
+            <Li>A link to the interactive map in Mapbox</Li>
+            <ul>
+                <li>See the map: <a href="https://tscholten1.github.io/MAP671-Final-Project/">2019 Road Trip</a></li>
+            </ul>
     </section>
 
     <!--        ***********************************************************************************-->
     <section class="project">
         <a href="https://tscholten1.github.io/MAP671-Lab-09/" target="_blank"><img src="Full-size-Images_Maps/Devils%20Tower.PNG" alt="Devils Tower" class="project-image" /></a>
         <h3>Devils Tower National Monument</h3>
-        <p>The project involved creating a web page to feature and describe Devils Tower National Monument in northeastern Wyoming. In addition to a two-column layout describe the geologic and historical nature of the landmark, the web page includes a dynamic map created using Mapbox Studio. This project involved initially acquiring data from the United States Board of Geographic Names (GNIS), working with Mapbox Studio to create a baselayer, add customer layers (points), specifying the map position, style with data conditions,</p>
+        <p>The project involved creating a web page to feature and describe Devils Tower National Monument in northeastern Wyoming. In addition to a two-column layout describing the geologic and historical nature of the landmark, the web page includes a dynamic map created using Mapbox Studio. This project involved initially acquiring data from the United States Board of Geographic Names (GNIS), working with Mapbox Studio to create a baselayer, add customer layers (points), specifying the map position, and styling the label visualization with data conditions</p>
 
         <h3>Software used:</h3>
         <Li>GitHub</Li>
         <Li>Brackets text editor</Li>
+        <Li>Qgis open-source GIS software</Li>
         <li>Created elevation contours with Qgis GDAL</li>
         <li>Used Qgis tools to clip raster by extent and extract elevation contour lines</li>
         <li>Used Qgis raster and field calculators</li>
         <li>Worked with MapBox to import raster and vector layers as well as to style layers for color and visual appearance</li>
         <li>Styled and published map of Devils Tower showing the spatial extent and contour lines based on the USGS 1/3 arc-second DEM (Digital Elevation Model)</li>
         <li>Data is shown on Mapbox web map with geolocation services enabled</li>
-        <li>Used GDAL and QGIS 3.6 to convert raster elevation units and create contours.</li>
+        <li>Used Qgis GDAL to convert raster elevation units and create contours.</li>
 
         <li>See the map: <a href="https://tscholten1.github.io/MAP671-Lab-09/">Devils Tower</a></li>
         </ul>
