@@ -154,8 +154,8 @@
 
         <h3>Key concepts:</h3>
         <Li>Used the drawMap() function which uses GeoJSON data to create a L.GeoJson object with basic styles, adds it to the map, and then fits the map view to the extent of the layer.</Li>
-        <Li>Used an advanced technique known as <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> to load an external file containing GeoJSON data. These data contained both the geometry information for drawing SVG elements on the map and the attribute data.</Li>
-        <Li>Loaded GeoJSON data using the JQuery method .getJSON(). The callback function executes and accesses the GeoJSON data which has been parsed by JQuery and preserved in the same JSON structure.</Li>
+        <Li>Used the <a href="https://www.w3schools.com/xml/ajax_intro.asp">AJAX</a> tool to load an external file containing GeoJSON data. These data contained both the geometry information for drawing SVG elements on the map and the attribute data.</Li>
+        <Li>Loaded GeoJSON data using the JQuery method .getJSON(). The callback function executes and accesses the GeoJSON data which has been parsed by JQuery and preserved in the same JSON structure</Li>
         <Li>Created and used the Leaflet L.GeoJson object method</Li>
         <Li>Invoked Leaflet methods on layer groups and individual layers</Li>
         <Li>Used a Leaflet layer control to manage multiple data layers</Li>
@@ -181,34 +181,35 @@
     <section class="project">
         <a href="https://tscholten1.github.io/MAP671-Final-Project/" target="_blank"><img src="Full-size-Images_Maps/2019%20Road%20Trip.png" alt="2019 Road Trip" class="project-image" /></a>
         <h3>2019 Road Trip web page with interactive map</h3>
-        <p>This project synthesized a variety of tools, techniques, and methods throughout MAP 671, Introduction to New Mapping. Key lessons learned include: creating a process to export Google location data from my Google account into a usable format for mapping. This involved:</p>
+        <p>This project synthesized a variety of tools, techniques, and methods throughout MAP 671, <i>Introduction to New Mapping.</i> Key lessons learned include: </p>
 
+        <li>Creating a process to export Google location data from my Google account into a usable format for mapping. This involved:</li>
         <li>Exporting data from Google location history located on cell phone. Because Google allows only exporting in monthly time frames, I had to export each day for the time frame that I wanted as a .KML file.</li>
         <li>Upon exporting each day's data, I then uploaded that data to Geojson.io where I was able to see and verify all point locations.</li>
-        <li>Next, I was able to export all 15 days of individual .KML files as one geojson file which was then uploaded to Mapbox.</li>
+        <li>Next, I was able to export all 15 days of individual .KML files as one geojson file which was then uploaded to Mapbox</li>
         <li>Two duplicate files were made of this dataset to show a line segment of my travel route and a second to show point locations</li>
         <li>These two datasets were then styled with color and size to create a visually appealing map features.</li>
         <li>Working with numerous CSS and HTML refinements to create a visually and interactively pleasing map. Specific elements that I explored and used include:</li>
         <li>Resizing large (both in pixels and megabytes) photos</li>
         <li>Placment of photos within a two column web page</li>
         <li>Inserting a Mapbox map within the web page</li>
-        <li>Creating hyperlinks that provide readers a convenient way to gain additional information on the location or site that was visited.</li>
-        <li>Style datasets in Mapbox for point locations, line segments, and feature labels.</li>
-        <li>A seperate geojson file needed to be created of a smaller set of locations to visualize to highligh key areas or locations that would also help to provide reference on the map.</li>
+        <li>Creating hyperlinks that provide readers with a convenient way to gain additional information on the location or site that was visited.</li>
+        <li>Styled datasets in Mapbox for point locations, line segments, and feature labels.</li>
+        <li>A seperate geojson file was created of a smaller set of locations to highligh key areas that would help to provide reference on the map.</li>
         <li>Utilize a technology and software flow the included Bracets as my text editor and GitHub to store my data in repositories and serve as a version control.</li>
 
         <h3>Web page and map features include:</h3>
         <p>
             <Li>Details for selected points of interest that were visted on the trip including an image/photo of the location.</Li>
-            <Li>Paragraph providing a synopsis of the point of interest</Li>
-            <Li>A hyperlink (in blue text) that directs the user to an external web source of additional information on the point of interest.</Li>
-            <Li>Initial web map (created in Mapbox studio) that shows the specific travel route based on location data. Points of interest are labeled that changes based on zoom level.</Li>
+            <Li>Paragraphs providing a synopsis of the points of interest</Li>
+            <Li>Hyperlinks (in blue text) that directs the user to an external web source of additional information on the point of interest</Li>
+            <Li>Initial web map (created in Mapbox studio) that shows the specific travel route based on location data. Points of interest are labeled that changes based on user zoom and panning actions.</Li>
             <Li>A link to the interactive map in Mapbox</Li>
 
             <h3>Software, tools, and data formats used:</h3>
             <Li>GitHub (repository hosting service)</Li>
             <Li>Used <a href="https://mapshaper.org/">Mapshaper</a>.This site enables editing map data in shapefile, GeoJSON, TopoJSON, DBF, and CSV formats.</Li>
-            <Li>Used <a href="https://www.convertcsv.com/csv-to-geojson.htm">Convert CSV files to Geojson</a>.This site converts Comma Separated Values (CSV) and Excel files into Geojson (and other formats) by loading or a CSV or Excel file, or loading from an external web page. This tool runs on the client-side using Javascript, so data never leaves a local computer. Save the output by copying or use the "Download Result" feature.</Li>
+            <Li>Used <a href="https://www.convertcsv.com/csv-to-geojson.htm">Convert CSV files to Geojson</a>.This site converts Comma Separated Values (CSV) and Excel files into Geojson (and other formats) by loading or a CSV or Excel file, or loading from an external web page. This tool runs on the client-side using Javascript, so data never leaves a local computer. Saved the output by copying or use the "Download Result" feature.</Li>
             <Li>Brackets (text editor)</Li>
             <li>Qgis (open-source GIS software)</li>
             <Li>GeoJSON (data format for representing geographic features)</Li>
@@ -224,7 +225,7 @@
     <section class="project">
         <a href="https://tscholten1.github.io/MAP671-Lab-09/" target="_blank"><img src="Full-size-Images_Maps/Devils%20Tower.PNG" alt="Devils Tower" class="project-image" /></a>
         <h3>Devils Tower National Monument</h3>
-        <p>The project involved creating a web page to feature and describe Devils Tower National Monument in northeastern Wyoming. In addition to a two-column layout describing the geologic and historical nature of the landmark, the web page includes a dynamic map created using Mapbox Studio. This project involved initially acquiring data from the United States Board of Geographic Names (GNIS), working with Mapbox Studio to create a baselayer, add customer layers (points), specifying the map position, and styling the label visualization with data conditions</p>
+        <p>This project involved creating a web page to feature and describe Devils Tower National Monument in northeastern Wyoming. In addition to a two-column layout that provided text and graphics describing the geologic and historical nature of the landmark, the web page includes a dynamic map created using Mapbox Studio. This project involved initially acquiring data from the United States Board of Geographic Names (GNIS), working with Mapbox Studio to create a baselayer, add custom layers (points), specifying the map position, and styling the label visualization with data conditions.</p>
 
         <h3>Software, tools, and data formats used:</h3>
         <Li>GitHub (repository hosting service)</Li>
@@ -234,8 +235,7 @@
         <li>Used Qgis tools to clip raster by extent and extract elevation contour lines</li>
         <li>Used Qgis raster and field calculators</li>
         <li>Worked with MapBox to import raster and vector layers as well as to style layers for color and visual appearance</li>
-        <li>Styled and published map of Devils Tower showing the spatial extent and contour lines based on the USGS 1/3 arc-second DEM (Digital Elevation Model)</li>
-        <li>Data is shown on Mapbox web map with geolocation services enabled</li>
+        <li>Styled and published map of Devils Tower showing the spatial extent and contour lines based on the USGS 1/3 arc-second DEM (Digital Elevation Model).</li>
         <li>Used Qgis GDAL to convert raster elevation units and create contours.</li>
 
         <li>See the map: <a href="https://tscholten1.github.io/MAP671-Lab-09/">Devils Tower</a></li>
@@ -249,15 +249,15 @@
         <a href="https://tscholten1.github.io/Oregon-Unemployment/" target="_blank"><img src="Full-size-Images_Maps/Oregon%20Unemployment%20Rates%20by%20County%20w_slider.jpg" alt="Oregon Unemployment" class="project-image" /></a>
         <h3>Map of Oregon Unemployment by County</h3>
 
-        <p>The focus of this project is to provide multiple user interaction elements to explore the data within the spatial and temporal context of unemployment rates in Oregon counties and more broadly, the entire state.</p>
+        <p>The focus of this project was to provide multiple user interaction elements to explore the data within the spatial and temporal context of unemployment rates in Oregon counties and more broadly, the entire state.</p>
 
         <h3>Map features include:</h3>
         <p>
             <Li>Choropleth map displays state and county-level unemployment rates by year.</Li>
-            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update. User interaction is one of the most important differences between traditional static maps and web-based maps. The ability to change the map not only offers new possibilities for understanding the information. It also makes engaging with a map more interesting and emotionally rewarding: it's fun!</Li>
-            <Li>Provide the user with a slider bar for the user to change the year of data that updates both the choropleth map and the information panel.</Li>
-            <Li>The popup/tooltip allows the user an interactive experience to retrieve specific values (e.g. unemployment rate and county name) from individual counties</Li>
-            <Li>Provide the user the ability to switch between data sets using a slider bar to change years and have the map dynamically update to reflect these changes instantly.</Li>
+            <Li>Several interactive elements that give the user the ability to select various data attributes and have the map dynamically update.</Li>
+            <Li>A slider bar for the user to change the year of data that updates both the choropleth map and the information panel.</Li>
+            <Li>A popup/tooltip allows the user an interactive experience to retrieve specific values (e.g. unemployment rate and county name) from individual counties</Li>
+            <Li>The ability to switch between data sets using a slider bar to change years and have the map dynamically update to reflect these changes instantly.</Li>
             <Li>An information panel, available when interacting with county features, which will display more information than space allows within the popups or tooltips.</Li>
 
         </p>
